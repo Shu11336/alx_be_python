@@ -11,6 +11,7 @@ if __name__ == "__main__":
     try:
         temperature = float(input("Enter the temperature to convert: "))
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
+        
         if unit == 'F':
             converted = convert_to_celsius(temperature)
             print(f"{temperature}°F is {converted}°C")
